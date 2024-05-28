@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- argument -->
+
+  <!-- params -->
+  <rosparam file="$(find whi_calibration_odom)/config/config.yaml" command="load" subst_value="true"/>
+
+  <!-- hardware interface -->
+  <node name="whi_calibration_odom" pkg="whi_calibration_odom" type="whi_calibration_odom_node" output="screen"/>
+</launch>

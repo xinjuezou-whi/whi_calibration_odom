@@ -1,0 +1,12 @@
+whi_calibration_odom:
+  loop_hz: 50 # hz
+  linears: [-0.02, -0.02, -0.05, -0.05, -0.1, -0.1]
+  angulars: [15.0, 30.0, 45.0] # degree
+  thresh_linear: 0.005
+  thresh_angular: 2.0 # degree
+  wait_span: 5.0 # second
+  twist_topic: /cmd_vel
+  vel_linear: 0.025
+  vel_angular: 0.1
+  map_frame: odom
+  base_frame: base_link
